@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="title">Medicina</div>
+    </header>
+
+    <!-- Button Section -->
+    <section class="button-section">
+        <button class="interactive-button" id="symptom-checker-btn">Symptom Checker</button>
+        <button class="interactive-button" id="scan-prescription">Scan Your Prescription</button>
+        <button class="interactive-button" id="pill-reminder">Pill Reminder</button>
+        <button class="interactive-button" id="new-button">New</button>
+    </section>
+
+    <!-- Symptom Checker Section -->
+    <section class="symptom-checker hidden" id="symptom-checker">
+        <h2>Test Your Symptoms</h2>
+        <div class="symptom-list" id="symptom-list">
+            <!-- Symptoms will be dynamically added here -->
+        </div>
+        <button id="check-symptoms">Go</button>
+        <canvas id="diseaseChart"></canvas>
+        <div id="result-container"></div>
+    </section>
+
+    <script src="main-script.js"></script>
+</body>
+</html>

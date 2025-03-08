@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="title">Medicina</div>
+    </header>
+
+    <section class="login-section" id="login-section">
+        <div class="login-container">
+            <h2 class="login-title">Medicina Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+                <div class="forgot-password">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+                <div class="emergency-login">
+                    <a href="emergency-login.html">Emergency Login</a>
+                </div>
+            </form>
+            <div class="contact-section">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank">
+                    <img src="github-icon.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="button-section">
+        <button class="interactive-button" id="symptom-checker-btn">Symptom Checker</button>
+        <button class="interactive-button" id="scan-prescription">Scan Your Prescription</button>
+        <button class="interactive-button" id="pill-reminder">Pill Reminder</button>
+        <button class="interactive-button" id="new-button">New</button>
+    </section>
+
+    <section class="symptom-checker hidden" id="symptom-checker">
+        <h2>Test Your Symptoms</h2>
+        <div class="symptom-list" id="symptom-list">
+        </div>
+        <button id="check-symptoms">Go</button>
+        <div id="question-container" class="hidden">
+        </div>
+        <canvas id="diseaseChart"></canvas>
+        <div id="result-container"></div>
+    </section>
+
+    <script src="main-script.js"></script>
+</body>
+</html>

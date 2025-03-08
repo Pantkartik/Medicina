@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('hospital-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.05);
+}
+
+.login-title {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.login-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #3b7bbf;
+    transform: translateY(-3px);
+}
+
+.forgot-password, .emergency-login {
+    margin-top: 1rem;
+}
+
+.forgot-password a, .emergency-login a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.forgot-password a:hover, .emergency-login a:hover {
+    color: #3b7bbf;
+    text-decoration: underline;
+}
+
+.contact-section {
+    margin-top: 2rem;
+}
+
+.contact-section a {
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-section img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-section a:hover {
+    transform: scale(1.2);
+}
+
+.header {
+    background-color: #a5c3e5;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #040303;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.interactive-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.interactive-button:hover {
+    background-color: #3b7bbf;
+    transform: translateY(-3px);
+}
+
+.symptom-checker {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.symptom-checker:hover {
+    transform: scale(1.05);
+}
+
+.symptom-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.symptom-list label {
+    background-color: #e3f2fd;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.symptom-list label:hover {
+    background-color: #cce7ff;
+}
+
+.symptom-list input {
+    margin-right: 5px;
+}
+
+#check-symptoms {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#check-symptoms:hover {
+    background-color: #3b7bbf;
+    transform: translateY(-3px);
+}
+
+#question-container {
+    margin-top: 2rem;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.question input {
+    margin-right: 5px;
+}
+
+.result-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
